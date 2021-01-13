@@ -1,4 +1,4 @@
-# ![Ringbearer](ringbearer.gif)
+# ![Ringbearer](ringbearer_title.gif)
 
 Includes the Ringbearer font for nix. This is [Pete Klassen's](https://www.thehutt.de/tolkien/fonts.html) font, inspired by one of the fonts used in Peter Jackson's The Lord of the Rings.
 
