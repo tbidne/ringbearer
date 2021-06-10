@@ -37,7 +37,7 @@ With flakes, your `flake.nix` should looks something like:
     {
       nixosConfigurations = {
         modules = [
-            (import ./configuration.nix { inherit pkgs system ringbearer; })
+          (import ./configuration.nix { inherit pkgs system ringbearer; })
 	];
       };
     };
