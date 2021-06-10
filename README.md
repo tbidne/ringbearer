@@ -1,4 +1,11 @@
+<div align="center">
+
 # ![Ringbearer](ringbearer_title.gif)
+
+![flakes](https://github.com/tbidne/ringbearer/workflows/flakes/badge.svg?branch=main)
+![legacy](https://github.com/tbidne/ringbearer/workflows/legacy/badge.svg?branch=main)
+
+</div>
 
 # Introduction
 
@@ -32,8 +39,8 @@ With flakes, your `flake.nix` should looks something like:
         modules = [
             (import ./configuration.nix { inherit pkgs system ringbearer; })
 	];
-      }
-    }
+      };
+    };
 }
 ```
 

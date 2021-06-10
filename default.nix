@@ -1,8 +1,8 @@
-{ pkgs, stdenv, ... }:
+{ pkgs }:
 
 let
-  version = "v1.0.0";
-in stdenv.mkDerivation {
+  version = "1.0.0";
+in pkgs.stdenv.mkDerivation {
   name = "ringbearer-${version}";
 
   src = ./.;
