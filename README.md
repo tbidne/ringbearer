@@ -2,8 +2,7 @@
 
 # ![Ringbearer](ringbearer_title.gif)
 
-![flakes](https://github.com/tbidne/ringbearer/workflows/flakes/badge.svg?branch=main)
-![legacy](https://github.com/tbidne/ringbearer/workflows/legacy/badge.svg?branch=main)
+![ci](https://github.com/tbidne/ringbearer/workflows/ci/badge.svg?branch=main)
 
 </div>
 

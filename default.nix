@@ -1,16 +1,10 @@
-{ pkgs }:
-
-let
-  version = "1.0.0";
-in pkgs.stdenv.mkDerivation {
-  name = "ringbearer-${version}";
-
-  src = ./.;
-
-  buildInputs = [ pkgs.unzip ];
-
-  installPhase = ''
-    unzip $src/ringbearer.zip
-    install -m444 -Dt $out/share/fonts/truetype *.TTF
-  '';
-}
+(import
+  (
+    let lock = builtins.fromJSON (builtins.readFile ./flake.lock); in
+    fetchTarball {
+      url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
+      sha256 = lock.nodes.flake-compat.locked.narHash;
+    }
+  )
+  { src = ./.; }
+).defaultNix
